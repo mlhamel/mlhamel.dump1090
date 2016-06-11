@@ -5,4 +5,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y install git git-
 RUN git clone https://github.com/antirez/dump1090.git && cd dump1090 && make
 ADD /dump1090
 EXPOSE 8080
-CMD /dump1090/dump1090 --net --net-ro-port 31001 --quiet
+CMD /dump1090/dump1090 --net --net-ro-port 31001
